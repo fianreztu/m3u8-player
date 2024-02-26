@@ -50,6 +50,8 @@ function vidFullscreen() {
   } else if (video.webkitRequestFullscreen) {
       video.webkitRequestFullscreen();
     }
+	video.style.width = '100%';
+	video.style.height = '100%';
 }
 
 playM3u8(window.location.href.split("#")[1])
